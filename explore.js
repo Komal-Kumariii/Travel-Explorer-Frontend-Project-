@@ -1,6 +1,5 @@
-const UNSPLASH_KEY = CONFIG.UNSPLASH_KEY;
-const WEATHER_KEY = CONFIG.WEATHER_KEY;
-console.log(UNSPLASH_KEY, WEATHER_KEY);
+const UNSPLASH_KEY = "9E0vTEsVt4KYYXkHFQSUi2Un09q0qB9B6CooshuFDbc";
+const WEATHER_KEY = "294c2bf4adcdf4899b376cdb7fda8bf1";
 
 const searchBtn = document.getElementById("search-btn");
 const randomBtn = document.getElementById("random-btn");
