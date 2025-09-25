@@ -5,7 +5,7 @@
   color: #2c003e;
 }
 
-/* Heading */
+ 
 h1 {
   font-size: xxx-large;
   text-align: center;
@@ -13,7 +13,7 @@ h1 {
   text-shadow: 1px 1px 3px #f48fb1;
 }
 
-/* Search Container */
+ 
 .search-container {
   text-align: center;
   margin-bottom: 25px;
@@ -44,7 +44,7 @@ button:hover {
   box-shadow: 0 4px 12px rgba(156,39,176,0.4);
 }
 
-/* Destination Card */
+ 
 .destination-card {
   background: linear-gradient(145deg, #fff3e0, #fce4ec);
   padding: 15px;
@@ -92,14 +92,14 @@ button:hover {
 }
 
 
-/* Carousel Images */
+ 
 .carousel img {
   width: 100%;
   border-radius: 15px;
   margin-bottom: 8px;
 }
 
-/* Info inside card */
+ 
 .info h2 {
   color: #6a1b9a;
   text-align: center;
@@ -112,7 +112,7 @@ button:hover {
   color: #4a148c;
 }
 
-/* Favorites & Trip Planner Containers */
+ 
 .favorites-container, .trip-planner {
   margin-top: 25px;
   padding: 15px;
@@ -144,7 +144,7 @@ ul li:hover {
   transform: translateX(5px);
 }
 
-/* Remove Button (Favorites & Trip) */
+ 
 .remove-fav, .remove-trip {
   background: linear-gradient(45deg, #f06292, #9c27b0, #ffeb3b);
   border: none;
@@ -169,7 +169,7 @@ ul li:hover {
   pointer-events: none;
 }
 
-/* Shake animation */
+ 
 @keyframes shake {
   0% { transform: rotate(0deg);}
   20% { transform: rotate(-15deg);}
@@ -179,7 +179,7 @@ ul li:hover {
   100% { transform: rotate(0deg);}
 }
 
-/* Forecast Slider */
+ 
 .forecast-slider {
   display: flex;
   overflow-x: auto;
@@ -202,7 +202,7 @@ ul li:hover {
   color: #4a148c;
 }
 
-/* Leaflet Map */
+ 
 #map {
   height: 200px;
   margin-top: 12px;
@@ -210,7 +210,7 @@ ul li:hover {
   box-shadow: 0 5px 12px rgba(156,39,176,0.2);
 }
 
-/* Scrollbar styling for forecast */
+ 
 .forecast-slider::-webkit-scrollbar {
   height: 6px;
 }

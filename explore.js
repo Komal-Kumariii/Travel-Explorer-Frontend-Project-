@@ -184,7 +184,7 @@ randomBtn.addEventListener("click",()=>{
 // Trigger search function
 function performSearch() {
   const destination = searchInput.value.trim();
-  if(destination) displayDestination(destination); // your existing function
+  if(destination) displayDestination(destination); //  existing function
 }
 
 // Button click

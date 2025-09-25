@@ -1,40 +1,40 @@
   body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #a18cd1, #fbc2eb, #fddb92); /* purple → pink → yellow */
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb, #fddb92);  
   color: #333;
 }
 
-/* Welcome text */
+ 
 .welcome-text {
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
   margin: 20px 0 10px 0;
-  color: #4b0082; /* deep purple */
+  color: #4b0082;  
 }
 
-/* Header */
+ 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
-  background: #6a0572; /* purple */
+  background: #6a0572;  
   color: white;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-/* Logo */
+ 
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #ffeb3b; /* yellow */
+  color: #ffeb3b;  
 }
 
-/* Navbar */
+ 
 .navbar {
   display: flex;
   gap: 20px;
@@ -48,7 +48,7 @@
 }
 
 .navbar a:hover {
-  color: #ffeb3b; /* yellow */
+  color: #ffeb3b;  
 }
 
 /* Responsive Navbar */
@@ -77,11 +77,11 @@
   }
 }
 
-/* Hero Section */
+ 
 .hero {
   text-align: center;
   padding: 60px 20px;
-  background: linear-gradient(to right, #ff9a9e, #fad0c4, #fbc2eb); /* pink blend */
+  background: linear-gradient(to right, #ff9a9e, #fad0c4, #fbc2eb);  
   color: #4b0082;
 }
 
@@ -91,7 +91,7 @@
 }
 
 .explore-btn {
-  background: #ffeb3b; /* yellow */
+  background: #ffeb3b;  
   border: none;
   padding: 12px 30px;
   font-size: 1.2rem;
@@ -101,10 +101,10 @@
 }
 
 .explore-btn:hover {
-  background: #fdd835; /* darker yellow */
+  background: #fdd835;  
 }
 
-/* Card Section */
+ 
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -123,14 +123,13 @@
 
 .card:hover {
   transform: translateY(-8px);
-  background: #ffe082; /* soft yellow hover */
+  background: #ffe082;  
 }
 
 .card h3 {
   color: #6a0572;
 }
-
- /* About & Contact Features Section styles */
+ 
 .features-section {
   padding: 60px 20px;
   text-align: center;
