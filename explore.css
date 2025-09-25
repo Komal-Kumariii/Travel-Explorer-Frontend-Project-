@@ -1,0 +1,225 @@
+  body{
+  font : 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f3e5f5, #ffe4e1, #fff9c4);
+  padding: 20px;
+  color: #2c003e;
+}
+
+/* Heading */
+h1 {
+  font-size: xxx-large;
+  text-align: center;
+  color: #6a1b9a;
+  text-shadow: 1px 1px 3px #f48fb1;
+}
+
+/* Search Container */
+.search-container {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+input#search-input {
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 2px solid #9c27b0;
+  width: 200px;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-left: 5px;
+  background: linear-gradient(45deg, #9c27b0, #f06292, #ffeb3b);
+  color: white;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(156,39,176,0.4);
+}
+
+/* Destination Card */
+.destination-card {
+  background: linear-gradient(145deg, #fff3e0, #fce4ec);
+  padding: 15px;
+  margin: 15px auto;
+  border-radius: 20px;
+  width: 320px;
+  box-shadow: 0 6px 15px rgba(156,39,176,0.3);
+  transition: transform 0.2s;
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.carousel::-webkit-scrollbar {
+  height: 6px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background: #9c27b0;
+  border-radius: 3px;
+}
+.carousel::-webkit-scrollbar-track{
+    background: #e1c2eb;
+}
+.carousel img {
+  min-width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  flex-shrink: 0;
+  transition: transform 0.3s;
+}
+
+.carousel img:hover {
+  transform: scale(1.05);
+}
+
+
+/* Carousel Images */
+.carousel img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 8px;
+}
+
+/* Info inside card */
+.info h2 {
+  color: #6a1b9a;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.info p {
+  margin: 4px 0;
+  font-weight: 500;
+  color: #4a148c;
+}
+
+/* Favorites & Trip Planner Containers */
+.favorites-container, .trip-planner {
+  margin-top: 25px;
+  padding: 15px;
+  background: linear-gradient(135deg, #fce4ec, #fff9c4);
+  border-radius: 20px;
+  box-shadow: 0 5px 12px rgba(156,39,176,0.2);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: linear-gradient(45deg, #ffeb3b, #f48fb1, #9c27b0);
+  color: #2c003e;
+  padding: 8px 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(156,39,176,0.2);
+  transition: transform 0.2s;
+}
+
+ul li:hover {
+  transform: translateX(5px);
+}
+
+/* Remove Button (Favorites & Trip) */
+.remove-fav, .remove-trip {
+  background: linear-gradient(45deg, #f06292, #9c27b0, #ffeb3b);
+  border: none;
+  border-radius: 8px;
+  padding: 4px 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.remove-fav:hover, .remove-trip:hover {
+  animation: shake 0.3s;
+  background: linear-gradient(45deg, #ffeb3b, #f06292, #9c27b0);
+}
+
+.remove-fav svg, .remove-trip svg {
+  width: 16px;
+  height: 16px;
+  fill: white;
+  pointer-events: none;
+}
+
+/* Shake animation */
+@keyframes shake {
+  0% { transform: rotate(0deg);}
+  20% { transform: rotate(-15deg);}
+  40% { transform: rotate(15deg);}
+  60% { transform: rotate(-10deg);}
+  80% { transform: rotate(10deg);}
+  100% { transform: rotate(0deg);}
+}
+
+/* Forecast Slider */
+.forecast-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding: 12px 0;
+}
+
+.forecast-card {
+  min-width: 110px;
+  background: linear-gradient(145deg, #fff3e0, #fce4ec);
+  border-radius: 15px;
+  text-align: center;
+  padding: 8px;
+  box-shadow: 0 4px 10px rgba(156,39,176,0.2);
+}
+
+.forecast-card p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #4a148c;
+}
+
+/* Leaflet Map */
+#map {
+  height: 200px;
+  margin-top: 12px;
+  border-radius: 15px;
+  box-shadow: 0 5px 12px rgba(156,39,176,0.2);
+}
+
+/* Scrollbar styling for forecast */
+.forecast-slider::-webkit-scrollbar {
+  height: 6px;
+}
+
+.forecast-slider::-webkit-scrollbar-thumb {
+  background: #9c27b0;
+  border-radius: 3px;
+}
+
+.forecast-slider::-webkit-scrollbar-track {
+  background: #e1c2eb;
+}

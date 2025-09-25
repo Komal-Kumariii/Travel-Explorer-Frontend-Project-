@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Explorer</title>
+  <link rel="stylesheet" href="explore.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome To VoyageVista Travel Explorer</h1>
+     
+  </header>
+
+  <!-- Search -->
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Enter destination">
+    <button id="search-btn">Search</button>
+    <button id="random-btn">Random Destination</button>
+  </div>
+
+  <!-- Main Layout -->
+  <div class="content-layout">
+    <!-- Destination Display -->
+    <div id="destination-info">
+    </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+      <!-- Trip Planner -->
+      <div class="trip-planner">
+        <h3> Trip Planner</h3>
+        <ul id="trip-list"></ul>
+        <p>Total Estimated Cost: $<span id="total-cost">0</span></p>
+      </div>
+
+      <!-- Favorites -->
+      <div class="favorites-container">
+        <h3>Favorites</h3>
+        <ul id="favorites-list"></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Leaflet -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="config.js"></script>
+  <script src="explore.js"></script>
+</body>
+</html>

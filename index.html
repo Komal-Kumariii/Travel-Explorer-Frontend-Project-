@@ -1,0 +1,118 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoyageVista</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Welcome text -->
+  <div class="welcome-text">Welcome to VoyageVista</div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">🌍 VoyageVista</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav class="navbar">
+        <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#features">Key Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h1>Discover Your Next Adventure</h1>
+    <a href="explore.html">
+      <button class="explore-btn">Explore Now</button>
+    </a>
+  </section>
+
+ <!-- About Section -->
+<section id="about" class="features-section">
+  <h2>About VoyageVista</h2>
+  <div class="features-container">
+    <div class="feature-card">
+      <img src="https://img.icons8.com/?size=100&id=EjPKvil2xjmP&format=png&color=000000" alt="About">
+      <h3>Our Mission</h3>
+      <p>VoyageVista aims to simplify travel planning by offering interactive maps, destination insights, weather updates, and trip organization tools.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://img.icons8.com/?size=100&id=ni0ZUMLZy7EY&format=png&color=000000" alt="Interface">
+      <h3>User-Friendly Interface</h3>
+      <p>Designed for smooth navigation, our platform ensures that exploring destinations and planning trips is simple and enjoyable.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://img.icons8.com/?size=100&id=S5D5w5vFLhYp&format=png&color=000000 " alt="Responsive">
+      <h3>Fully Responsive</h3>
+      <p>Works seamlessly on desktops, tablets, and mobile devices with a visually appealing purple-pink-yellow theme.</p>
+    </div>
+  </div>
+</section>
+
+<!--Key Features section -->
+<section id="features" class="features-section">
+  <h2>Key Features</h2>
+  <div class="features-container">
+    <div class="feature-card">
+      <img src="https://img.icons8.com/fluency/96/search.png" alt="Search">
+      <h3>Explore Destinations</h3>
+      <p>Search any destination worldwide or try a random one to discover new places.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://img.icons8.com/fluency/96/weather.png" alt="Weather">
+      <h3>Weather Info</h3>
+      <p>Check real-time weather including temperature, humidity, and conditions for each location.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://img.icons8.com/fluency/96/map.png" alt="Map">
+      <h3>Interactive Map</h3>
+      <p>View destinations on an interactive map powered by Leaflet and OpenStreetMap.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://img.icons8.com/fluency/96/hearts.png" alt="Favorites">
+      <h3>Favorites</h3>
+      <p>Save your favorite destinations with one click and manage them easily.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://img.icons8.com/?size=100&id=bkZEkm8QJnph&format=png&color=000000" alt="Trip Planner">
+      <h3>Trip Planner</h3>
+      <p>Add destinations to your trip planner and keep track of estimated costs.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="features-section">
+  <h2>Contact Us</h2>
+  <div class="features-container">
+    <div class="feature-card">
+      <img src="https://img.icons8.com/fluency/96/email.png" alt="Email">
+      <h3>Email</h3>
+      <p>support@voyagevista.com</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://img.icons8.com/fluency/96/marker.png" alt="Location">
+      <h3>Location</h3>
+      <p>Global Travel Community</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://img.icons8.com/fluency/96/phone.png" alt="Support">
+      <h3>Support</h3>
+      <p>Our team is here to assist you with travel planning anytime!</p>
+    </div>
+  </div>
+</section>
+
+
+  <script>
+  function toggleMenu() {
+  document.querySelector('.navbar').classList.toggle('active');
+}
+</script>
+</body>
+</html>
