@@ -185,6 +185,7 @@ randomBtn.addEventListener("click",()=>{
 function performSearch() {
   const destination = searchInput.value.trim();
   if(destination) displayDestination(destination); //  existing function
+  saveSearchHistory(destination);  // save to history
 }
 
 // Button click
@@ -197,7 +198,76 @@ searchInput.addEventListener("keyup", (event) => {
   }
 });
 
+document.getElementById("back-btn").addEventListener("click", () => {
+  window.location.href = "index.html"; // navigate back to landing page
+});
 
 // Initialize
 renderFavorites();
 renderTrip();
+
+
+  // Save search term into localStorage
+function saveSearchHistory(query) {
+    let history = JSON.parse(localStorage.getItem("searchHistory")) || [];
+    
+    // Avoid duplicates
+    if (!history.includes(query)) {
+        history.unshift(query); // Add to start
+    }
+
+    // Limit history to last 5 searches
+    history = history.slice(0, 5);
+
+    localStorage.setItem("searchHistory", JSON.stringify(history));
+    displaySearchHistory();
+}
+
+// Show history on page
+ // Show history on page
+function displaySearchHistory() {
+    const historyList = document.getElementById("history-list");
+    historyList.innerHTML = "";
+
+    let history = JSON.parse(localStorage.getItem("searchHistory")) || [];
+
+    history.forEach(item => {
+        let li = document.createElement("li");
+        li.dataset.query = item;
+
+        li.innerHTML = `
+          <span class="history-text">${item}</span>
+          <button class="remove-history">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 24 24">
+              <path d="M3 6h18v2H3V6zm2 3h14v13H5V9zm5 2v9h2v-9h-2zm4 0v9h2v-9h-2z"/>
+            </svg>
+          </button>
+        `;
+
+        // If user clicks on history text → search again
+        li.querySelector(".history-text").addEventListener("click", () => {
+            document.getElementById("search-input").value = item;
+            performSearch();
+        });
+
+        historyList.appendChild(li);
+    });
+}
+
+// Handle delete button click for history
+document.getElementById("history-list").addEventListener("click", (e) => {
+    if (e.target.closest(".remove-history")) {
+        const li = e.target.closest("li");
+        const query = li.dataset.query;
+
+        let history = JSON.parse(localStorage.getItem("searchHistory")) || [];
+        history = history.filter(h => h !== query);
+
+        localStorage.setItem("searchHistory", JSON.stringify(history));
+        displaySearchHistory();
+    }
+});
+
+
+// Call this once when page loads
+window.onload = displaySearchHistory;
